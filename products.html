@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Jupenta - Innovative Software Solutions</title>
+    <meta name="description" content="Explore Jupenta's portfolio of innovative software products across education, healthcare, retail, and smart city solutions.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <img src="assets/images/FINAL,JUPENTA,LOGO.png" alt="Jupenta Logo">
+                </div>
+                <span>Jupenta</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="min-height: 60vh; background: linear-gradient(135deg, var(--primary-600) 0%, var(--primary-800) 100%); color: white;">
+        <div class="container text-center">
+            <h1 style="font-size: 3.5rem; font-weight: 700; margin-bottom: 1.5rem;" data-aos="fade-up">
+                Our Product Portfolio
+            </h1>
+            <p style="font-size: 1.3rem; max-width: 800px; margin: 0 auto; opacity: 0.95;" data-aos="fade-up" data-aos-delay="100">
+                Innovative solutions designed to solve real-world challenges across multiple industries
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Categories -->
+    <section class="section" style="background: white; padding-top: 3rem;">
+        <div class="container">
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 3rem;" data-aos="fade-up">
+                <button class="filter-btn btn btn-primary" data-filter="all">All Products</button>
+                <button class="filter-btn btn btn-outline" data-filter="education">Education</button>
+                <button class="filter-btn btn btn-outline" data-filter="healthcare">Healthcare</button>
+                <button class="filter-btn btn btn-outline" data-filter="retail">Retail</button>
+                <button class="filter-btn btn btn-outline" data-filter="smart-city">Smart City</button>
+                <button class="filter-btn btn btn-outline" data-filter="agriculture">Agriculture</button>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-3" id="products-grid">
+                <!-- BusMate -->
+                <div class="product-item" data-category="education" data-aos="fade-up">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-bus" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">BusMate</h3>
+                        <p class="card-text mb-3">
+                            AI-powered school bus tracking with real-time ETAs, smart notifications, and voice alerts for safer student commutes.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Education</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Real-time GPS tracking</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Traffic-aware ETA predictions</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Voice & SMS alerts</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Parent mobile app</li>
+                        </ul>
+                        <a href="products/busmate.html" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- ClassSync -->
+                <div class="product-item" data-category="education" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chalkboard-teacher" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">ClassSync</h3>
+                        <p class="card-text mb-3">
+                            Smart classroom management with AI attendance, grade tracking, and seamless parent-teacher communication.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Education</span>
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">Cloud</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Automated attendance</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Grade management</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Parent portal</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Assignment tracking</li>
+                        </ul>
+                        <a href="products/classsync.html" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- CampusGuard -->
+                <div class="product-item" data-category="education smart-city" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #10b981 0%, #059669 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-shield-alt" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">CampusGuard</h3>
+                        <p class="card-text mb-3">
+                            AI-powered campus security with smart surveillance, visitor management, and emergency alert systems.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Security</span>
+                            <span class="tag">AI Vision</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Smart CCTV monitoring</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Visitor management</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Emergency alerts</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Access control</li>
+                        </ul>
+                        <a href="products/campusguard.html" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- RetailEdge -->
+                <div class="product-item" data-category="retail" data-aos="fade-up">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-box" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">RetailEdge</h3>
+                        <p class="card-text mb-3">
+                            Smart inventory management with predictive analytics and automated supply chain optimization.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Retail</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">AI/ML</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Predictive stock management</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Multi-location tracking</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Supplier management</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Sales analytics</li>
+                        </ul>
+                        <a href="products/retailedge.html" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- HealthHub -->
+                <div class="product-item" data-category="healthcare" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-hospital" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">HealthHub</h3>
+                        <p class="card-text mb-3">
+                            Comprehensive telemedicine platform connecting patients with doctors through secure video consultations.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Video</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Video consultations</li>
+                            <li style="margin-bottom: 0.5rem;">✓ E-prescription generation</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Appointment scheduling</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Medical records</li>
+                        </ul>
+                        <a href="products/healthhub.html" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- ParkEase -->
+                <div class="product-item" data-category="smart-city" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #06b6d4 0%, #0891b2 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-parking" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">ParkEase</h3>
+                        <p class="card-text mb-3">
+                            Smart parking solution with real-time availability tracking, mobile booking, and automated payments.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Smart City</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Real-time slot tracking</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Mobile slot booking</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Automatic payments</li>
+                            <li style="margin-bottom: 0.5rem;">✓ License plate recognition</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- FarmIQ -->
+                <div class="product-item" data-category="agriculture" data-aos="fade-up">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #84cc16 0%, #65a30d 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-tractor" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">FarmIQ</h3>
+                        <p class="card-text mb-3">
+                            Smart agriculture solution with IoT sensors for soil monitoring, weather forecasting, and crop optimization.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Agriculture</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Soil moisture sensors</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Weather forecasting</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Crop health monitoring</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Automated irrigation</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- QuickServe -->
+                <div class="product-item" data-category="retail" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-utensils" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">QuickServe</h3>
+                        <p class="card-text mb-3">
+                            Complete restaurant management system with digital menu, order tracking, and kitchen display integration.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Restaurant</span>
+                            <span class="tag">Cloud</span>
+                            <span class="tag">Mobile</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ Digital menu with QR</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Order management</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Kitchen display system</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Inventory tracking</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+
+                <!-- EcoMonitor -->
+                <div class="product-item" data-category="smart-city" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card" style="height: 100%;">
+                        <div style="background: linear-gradient(135deg, #14b8a6 0%, #0f766e 100%); height: 200px; border-radius: 12px 12px 0 0; margin: -2rem -2rem 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-globe-americas" style="font-size: 4rem; color: white;"></i>
+                        </div>
+                        <h3 class="card-title">EcoMonitor</h3>
+                        <p class="card-text mb-3">
+                            Environmental monitoring system tracking air and water quality with IoT sensors and public dashboards.
+                        </p>
+                        <div style="margin-bottom: 1.5rem;">
+                            <span class="tag">Environment</span>
+                            <span class="tag">IoT</span>
+                            <span class="tag">Analytics</span>
+                        </div>
+                        <ul style="margin-bottom: 1.5rem; color: var(--gray-600); font-size: 0.95rem; list-style: none;">
+                            <li style="margin-bottom: 0.5rem;">✓ IoT sensor network</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Pollution tracking</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Historical analysis</li>
+                            <li style="margin-bottom: 0.5rem;">✓ Public dashboard</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary" style="width: 100%; text-align: center;">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: white;">
+        <div class="container">
+            <div class="glass-card text-center" style="padding: 4rem 2rem; background: linear-gradient(135deg, var(--primary-500) 0%, var(--primary-700) 100%); color: white;" data-aos="zoom-in">
+                <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">
+                    Have a Custom Project in Mind?
+                </h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Let's build something amazing together. Our team specializes in custom software development.
+                </p>
+                <a href="contact.html" class="btn btn-large" style="background: white; color: var(--primary-600);">Discuss Your Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo" style="color: white; margin-bottom: 1.5rem;">
+                    <div class="logo-icon">
+                        <img src="assets/images/FINAL,JUPENTA,LOGO.png" alt="Jupenta Logo">
+                    </div>
+                    <span>Jupenta</span>
+                </div>
+                <p style="color: var(--gray-400); margin-bottom: 1.5rem;">
+                    Innovative software solutions that transform businesses and improve lives.
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul class="footer-links">
+                    <li><a href="products/busmate.html">BusMate</a></li>
+                    <li><a href="products/classsync.html">ClassSync</a></li>
+                    <li><a href="products/campusguard.html">CampusGuard</a></li>
+                    <li><a href="products/retailedge.html">RetailEdge</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="products.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Support</h3>
+                <ul class="footer-links">
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Jupenta, Inc. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Product filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productItems = document.querySelectorAll('.product-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+                
+                // Update active button
+                filterBtns.forEach(b => {
+                    b.classList.remove('btn-primary');
+                    b.classList.add('btn-outline');
+                });
+                btn.classList.remove('btn-outline');
+                btn.classList.add('btn-primary');
+                
+                // Filter products
+                productItems.forEach(item => {
+                    if (filter === 'all') {
+                        item.style.display = 'block';
+                    } else {
+                        const categories = item.getAttribute('data-category');
+                        if (categories.includes(filter)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="assets/js/main.js"></script>
+    
+    <style>
+        .tag {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            background: var(--primary-100);
+            color: var(--primary-600);
+            border-radius: 20px;
+            font-size: 0.875rem;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</body>
+</html>
